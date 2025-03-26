@@ -12,3 +12,21 @@ This project is a scalable web scraping solution for extracting Amazon product d
 1. Python (Selenium, BeautifulSoup, Pandas, PySpark)
 2. Databricks (for distributed computing)
 3. ChromeDriver (headless browser for web automation)
+
+## Installation & Setup:
+1. Installation of Google Chrome and Chrome Driver on Databricks is necessary.
+2. Run the Script on Databricks and Upload and execute main.ipynb in a Databricks notebook. The script:
+    1. Loads ChromeDriver in headless mode
+    2. Iterates through Amazon pages
+    3. Extracts product details
+    4. Stores the results in a PySpark DataFrame
+## Output:
+1. The scraped data includes:
+2. Product Name
+3. Product Link
+4. Ratings & Total Reviews
+5. Price (Discounted & Original)
+6. Deal Availability
+7. Coupon Savings
+
+The final dataset can be stored as a CSV file in Databricks or Azure Blob Storage.
